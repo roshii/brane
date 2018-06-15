@@ -10,11 +10,6 @@ Table of Contents
 =================
   * [Revision History](#revision-history)
   * [Introduction](#1-introduction)
-    * 1.1 [Purpose](#11-purpose)
-    * 1.2 [Document Conventions](#12-document-conventions)
-    * 1.3 [Intended Audience and Reading Suggestions](#13-intended-audience-and-reading-suggestions)
-    * 1.4 [Product Scope](#14-product-scope)
-    * 1.5 [References](#15-references)
   * [Overall Description](#overall-description)
     * 2.1 [Product Perspective](#21-product-perspective)
     * 2.2 [Product Functions](#22-product-functions)
@@ -24,13 +19,7 @@ Table of Contents
     * 2.6 [User Documentation](#26-user-documentation)
     * 2.7 [Assumptions and Dependencies](#27-assumptions-and-dependencies)
   * [External Interface Requirements](#external-interface-requirements)
-    * 3.1 [User Interfaces](#31-user-interfaces)
-    * 3.2 [Hardware Interfaces](#32-hardware-interfaces)
-    * 3.3 [Software Interfaces](#33-software-interfaces)
-    * 3.4 [Communications Interfaces](#34-communications-interfaces)
   * [System Features](#system-features)
-    * 4.1 [System Feature 1](#41-system-feature-1)
-    * 4.2 [System Feature 2 (and so on)](#42-system-feature-2-and-so-on)
   * [Other Nonfunctional Requirements](#other-nonfunctional-requirements)
     * 5.1 [Performance Requirements](#51-performance-requirements)
     * 5.2 [Safety Requirements](#52-safety-requirements)
@@ -49,7 +38,7 @@ Table of Contents
 | Name | Date    | Reason For Changes  | Version   |
 | ---- | ------- | ------------------- | --------- |
 | roshii | 2018-06-14 | Initial release | 0.1      |
-| roshii | 2018-06-15 | Removed template text, Added feature description | 0.1 | 
+| roshii | 2018-06-15 | Removed template text, Added feature description, Style correction | 0.1 | 
 |      |         |                     |           |
 
 ## 1. Introduction
@@ -66,27 +55,33 @@ TBD
 
 ## Overall Description
 ### 2.1 Product Perspective
-After more that five years trading cryptocurrencies, I did face difficulties tracking positions held at various exchanges and wallets and realized nothing existed for one to track its positions. Brane is therefore a new product that will be able to talk to various crypto exchanges and wallets to centralize ease management of crypto-investments. 
+After more that five years trading cryptocurrencies, I did face difficulties tracking positions held at various exchanges and wallets and realized nothing existed for one to track its positions. Brane is therefore a new product that will be able to talk to various crypto exchanges and wallets to centralize ease management of crypto-investments.  
+
 ### 2.2 Product Functions
-- Reads cryptocurrencies balance held at exchanges and wallets
-- Provides real-time and at date portfolio balance
-- Quantitative market analysis
-- Automated trading
+- Reads cryptocurrencies balance held at exchanges and wallets  
+- Provides real-time and at date portfolio balance  
+- Quantitative market analysis  
+- Automated trading  
+
 ### 2.3 User Classes and Characteristics
-Brane is intended at being use by tech savyy traders and investors.
+System is intended at being use by tech savyy traders and investors.  
+
 ### 2.4 Operating Environment
-Brane is designed to be used on a AMD64 Debian based server.
+Brane is designed to be used on a AMD64 Debian based server.  
+
 ### 2.5 Design and Implementation Constraints
-Reporting should allow investors to comply with local tax rules;
-It is intended to run 24/7 on dedicated hardware - the less resource hungry the better;
-It must connect to various exchanges and wallets;
-specific technologies, tools, and databases to be used;
-It must allow parallel operations;
-It will be developped in Julia for its numerical cimputing capabilities;
-It will used REST API to communicate with exchanges and RPC foor wallets;
-Exchanges authentication credential must be stored securely.
+Reporting should allow investors to comply with local tax rules;  
+It is intended to run 24/7 on dedicated hardware - the less resource hungry the better;  
+It must connect to various exchanges and wallets;  
+specific technologies, tools, and databases to be used;  
+It must allow parallel operations;  
+It will be developped in Julia for its numerical cimputing capabilities;  
+It will used REST API to communicate with exchanges and RPC foor wallets;  
+Exchanges authentication credential must be stored securely.  
+
 ### 2.6 User Documentation
-Documentation will mainly be provided online/whitin software.
+Documentation will mainly be provided online/whitin software.  
+
 ### 2.7 Assumptions and Dependencies
 TBD
 
@@ -102,30 +97,25 @@ TBD
 TBD
 
 ## System Features
-### 4.1 Connect to cryptocurrencies exchanges
-4.1.1   Description and Priority
-It allows the system to connect to cryptocurrencies exchanges and read data provided by their public and private API.
-4.1.2   Stimulus/Response Sequences
-Connection to exchanges are triggerred by system sartup which it constently feed with real time data.
-4.1.3   Functional Requirements
-TBD
-### 4.2 Connect to cryptocurrencies wallets
-4.2.1   Description and Priority
-It allows the system to connect to cryptocurrencies wallets to read balances
-4.2.2   Stimulus/Response Sequences
-Balances are retreived from wallet on system startup and updated minutely
-4.2.3   Functional Requirements
-TBD
-### 4.3 Store historical data
-4.2.1   Description and Priority
-It allows the system to save data obtained from exchanges and wallets
-4.2.2   Stimulus/Response Sequences
-Data is stored in a database as soon as received.
-4.2.3   Functional Requirements
-TBD
+### 4.1 Live data service
+4.1.1   Description and Priority  
+Priority level: High  
+It allows the system to connect to cryptocurrencies exchanges and wallets to retreive user's balances and exchange rates. 
+4.1.2   Stimulus/Response Sequences  
+Connection is initiated on system sartup;  
+Data is refreshed as often as possible.  
+4.1.3   Functional Requirements  
+TBD  
+### 4.2 Historical data service
+4.2.1   Description and Priority  
+It allows the system to save data obtained from exchanges and wallets  
+4.2.2   Stimulus/Response Sequences  
+Live data service initiates historical data service;  
+Balances and exchange rates are recorded once per minute.  
+4.2.3   Functional Requirements  
+TBD  
 ### 4.3 Other features
-TBD
-
+TBD   
 
 ## Other Nonfunctional Requirements
 ### 5.1 Performance Requirements
