@@ -1,4 +1,4 @@
-    © Copyright 2018, Simon Castano
+﻿    © Copyright 2018, Simon Castano
 
     This file is part of Brane.
 	
@@ -58,6 +58,10 @@ While ecosystem has developped over the years with the birth of hundreds differe
 ## 2 Problem Statement ##
 
 ### 2.1 Today's market ###
+
+Speaking from my own experience as crypto trader, I have to manage accounts at multiple exchanges as well as multiple crypto wallets.  
+One could very well select and use a single exchange and have all my asset stored there, but that would be very bad if that exchange goes Mt Gox... So, if you care about spreading your risk, you better spread your asset over multiple parties and wallets; as the saying goes: don't put all your eggs in the same basket.  
+Asset wise, cryto market offers a lot of investment options and while it is rather easy to balance risk over multiple parties, one should not only consider asset risk but potential return and any other asset characteristics that might be relevant to balance its crypto portfolio.  
 
 ### 2.2 Pain Points ###
 
