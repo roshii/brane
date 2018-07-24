@@ -85,10 +85,10 @@ Invertors will then have to optimize risk and return for each type portfolio, ex
 Having their ideal portfolio distribution at hand, investors will then have to enter or exit markets and time their entry or exit to balance their actual portofolio distribution against benchmark and get the most reward out of the trade, most likely using technical analysis of each market.  
 
 Overall, invertors will follow a repetitive process consisting of:
-- assest classification
-- assest rating
-- portfolio optimization
-- trade timing
+- Asset classification
+- Asset rating
+- Portfolio optimization
+- Trade timing
 
 Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
 
