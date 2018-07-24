@@ -59,11 +59,11 @@ While ecosystem has developped over the years with the birth of hundreds differe
 
 The cryto market offers a lot of investment options with more than sixteen hundreds cryptoassets and any wanabee investor will have to do his home work before entering the market. In most cases, Bitcoin will be the first, default cryptocurrency selected to build a portfolio - Bitcoin is just *the* original cryptocurrency, with the most capitalization, etc.  
 
-Regardless of the above, building a proper porfolio will require a quantitative analysis of available options so that assests can be selected and added to a portfolio to minimze risk and maximize return; it is assumed that "investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk."<sup>[*](#footnote5)</sup>  
+Regardless of the above, building a proper porfolio will require a quantitative analysis of available options so that assests can be selected and added to a portfolio to minimze risk and maximize return; it is assumed that "investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk."<sup>[*](#mpt)</sup>  
 
 
 Cryptoassets do have a wide variety of use cases associated with different markets, so selecting the later and classifying cryptoasset are the first steps that should be taken to facilitate diversification.  
-According ton P. Kravchenko<sup>[*](#footnote4)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
+According ton P. Kravchenko<sup>[*](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
 
 - Governance
 - Custody
@@ -72,7 +72,7 @@ According ton P. Kravchenko<sup>[*](#footnote4)</sup>, classification depends on
 - Audit
 
 Different combinations of the ways these processes are managed lead to hundred twenty five possible different types of digital assets and markets from which investors can pick to build a portfolio, including but not limited to crypto currencies, digital currencies, commodity-backed tokens, equity tokens, utility tokens, digital collectibles, etc.  
-In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[*](#footnote3)</sup>
+In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[*](#weiss)</sup>
 
 - Risk Index
 - Reward Index
@@ -85,21 +85,23 @@ Invertors will then have to optimize risk and return for each type portfolio, ex
 Having their ideal portfolio distribution at hand, investors will then have to enter or exit markets and time their entry or exit to balance their actual portofolio distribution against benchmark and get the most reward out of the trade, most likely using technical analysis of each market.  
 
 Overall, invertors will follow a repetitive process consisting of:
-- Asset classification
 - Asset rating
 - Portfolio optimization
 - Trade timing
 
-Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
+Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox<sup>[*](#mtgox)</sup>... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
 
-<a name="footnote5">*</a>: [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)
+<a name="mpt">*</a>: [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)
 
-<a name="footnote4">*</a>: [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)
+<a name="periodictable">*</a>: [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)
 
-<a name="footnote3">*</a>: [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)
+<a name="weiss">*</a>: [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)
+
+<a name="mtgox">*</a>: [Mt. Gox - Wikipedia](#https://en.wikipedia.org/wiki/Mt._Gox)
 
 
-### 2.2 Pain Points ###
+### 2.2 A growing complexity ###
+
 
 
 
