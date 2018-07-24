@@ -50,20 +50,58 @@ Table of Contents
 Bitcoin did successfully manage to remove trust in central authority that was so far requiered for any currency to be valued and used.  
 While ecosystem has developped over the years with the birth of hundreds differents cryptocurrencies<sup>[1](#footnote1)</sup>, the whole financial system around it remains a pale copy of the fiat financial system with exchanges, funds<sup>[2](#footnote2)</sup>, futures and others, all being handled by a third party which users have to blindy trust.  
 
-
-
 <a name="footnote1">1</a>: 1600+ cryptocurrencies according to [CoinMarketCap](#https://coinmarketcap.com/).  
 <a name="footnote2">2</a>: 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
 
 ## 2 Problem Statement ##
 
-### 2.1 Today's market ###
+### 2.1 Investing in the crypto market ###
 
-Speaking from my own experience as crypto trader, I have to manage accounts at multiple exchanges as well as multiple crypto wallets.  
-One could very well select and use a single exchange and have all my asset stored there, but that would be very bad if that exchange goes Mt Gox... So, if you care about spreading your risk, you better spread your asset over multiple parties and wallets; as the saying goes: don't put all your eggs in the same basket.  
-Asset wise, cryto market offers a lot of investment options and while it is rather easy to balance risk over multiple parties, one should not only consider asset risk but potential return and any other asset characteristics that might be relevant to balance its crypto portfolio.  
+The cryto market offers a lot of investment options with more than sixteen hundreds cryptoassets and any wanabee investor will have to do his home work before entering the market. In most cases, Bitcoin will be the first, default cryptocurrency selected to build a portfolio - Bitcoin is just *the* original cryptocurrency, with the most capitalization, etc.  
+
+Regardless of the above, building a proper porfolio will require a quantitative analysis of available options so that assests can be selected and added to a portfolio to minimze risk and maximize return; it is assumed that "investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk."<sup>[*](#footnote5)</sup>  
+
+
+Cryptoassets do have a wide variety of use cases associated with different markets, so selecting the later and classifying cryptoasset are the first steps that should be taken to facilitate diversification.  
+According ton P. Kravchenko<sup>[*](#footnote4)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
+
+- Governance
+- Custody
+- Issuance and distribution
+- Transaction processing
+- Audit
+
+Different combinations of the ways these processes are managed lead to hundred twenty five possible different types of digital assets and markets from which investors can pick to build a portfolio, including but not limited to crypto currencies, digital currencies, commodity-backed tokens, equity tokens, utility tokens, digital collectibles, etc.  
+In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[*](#footnote3)</sup>
+
+- Risk Index
+- Reward Index
+- Technology Index
+- Adoption Index
+
+While to first two indexes can be extracted and calculated from market data, the last ones follow a rather manual process and will also be subjective to invertor values and believes.  
+Invertors will then have to optimize risk and return for each type portfolio, extract a type index to, at last, optimize the whole portfolio.  
+
+Having their ideal portfolio distribution at hand, investors will then have to enter or exit markets and time their entry or exit to balance their actual portofolio distribution against benchmark and get the most reward out of the trade, most likely using technical analysis of each market.  
+
+Overall, invertors will follow a repetitive process consisting of:
+- assest classification
+- assest rating
+- portfolio optimization
+- trade timing
+
+Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
+
+<a name="footnote5">*</a>: [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)
+
+<a name="footnote4">*</a>: [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)
+
+<a name="footnote3">*</a>: [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)
+
 
 ### 2.2 Pain Points ###
+
+
 
 ### 2.3 Needs ###
 
