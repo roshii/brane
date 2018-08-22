@@ -102,35 +102,33 @@ Last and not least, investors could very well select and use a single exchange a
 
 ### 2.2 A growing complexity ###
 
-Regardless of how investors build their portfolio, following and managing the later is a manual process. Even though services or sofware are available for part of the process such as rating, optimization and timing, none do cover the whole repetitive process of rating, optimmizing and timing at once.  
-Investors are thus required to handle data manually at some point in time of the process. Considering investors should keep track of multiple parameters of multiple crypto asset held at multiple third parties, complexity and reporting is growing exponentilly with each new element in the portfolio.
+Regardless of how investors build their portfolio, following and managing the later is a manual process involving multiple parameters. Even though services or sofware are available for part of the process such as rating, optimization and timing, none do cover the whole repetitive process of rating, optimmizing and timing at once.  
+Investors are thus required to handle data manually at some point in time of the process. Considering investors should keep track of multiple parameters of multiple crypto asset held at multiple third parties, complexity and reporting is growing exponentilly with each new element in the portfolio, which can quickly become hard to manage manually.
 
-### 2.3 Needs ###
+### 2.3 What do crypto investors need? ###
 
-New crypto ETF keep coming to the market with more the hundred and fifty active as off April 2018 and while they do cover the need for a service shading away the complexity of managing a crypto portfolio, investors do have to trust a single third party going against what crypto has made possible: getting rid of the middle man.  
-And this middle man can in fact be made useless with Brane, by providing all functionallity needed for an investor in a single package, managing portfolio throughout the process.
+New crypto ETF keep coming to the market with more the hundred and fifty active as off April 2018 and while they do cover the need for a service shading away the complexity of managing a crypto portfolio, investors do have to trust a single third party going against what cryptocurrencies have made possible: getting rid of the trusted third party.  
+Investors clearly need a tool to get rid of this middle man by providing all functionallity needed for an investor to manage crypto portfolio through a single, unified software than can run from home.
 
 ### 2.4 Benefits ###
 
-Brane will be open source to allow any investor to audit its code and will be designed using a fast number processing language: Julia.
+Not only Brane will allow investors to manage portfolio made of assests held at various exchanges and wallets, de facto reducing third party risk, but will also provide various service made possible by beeing at the core of portfolio operations such as financial reporting, market and performance analyses and automated trading.
 
 ## 3 Solution ##
 
-### 3.1 In Short ###
+Brane will be open source to allow any investor to audit its code and will be designed using a fast number processing language: Julia.
 
-### 3.2 In Details ###
+### 3.1 Single Point of Entry ###
 
-#### 3.2.1 Single Point of Entry ####
+### 3.2 Reporting Made Easy ###
 
-#### 3.2.2 Reporting Made Easy ####
+### 3.3 Analyses Module ###
 
-#### 3.2.3 Analyses Module ####
+### 3.4 Algorithmic Trading ###
 
-#### 3.2.4 Algorithmic Trading ####
+### 3.5 Decentralized Data Intelligence ###
 
-#### 3.2.5 Decentralized Data Intelligence ####
-
-#### 3.2.6 Dedicated Hardware ####
+### 3.6 Dedicated Hardware ###
 
 ## 4 Conclusion ##
 
