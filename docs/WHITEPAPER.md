@@ -18,9 +18,6 @@
 
 # Brane #
 
-    In string theory, a brane is a physical object that generalizes
-	the notion of a point particle to higher dimensions.
-
 ## Abstract ##
 
 Brane is a cryptoassets portfolio management tool.
@@ -65,19 +62,19 @@ Regardless of the above, building a proper porfolio will require a quantitative 
 Cryptoassets do have a wide variety of use cases associated with different markets, so selecting the later and classifying cryptoasset are the first steps that should be taken to facilitate diversification.  
 According ton P. Kravchenko<sup>[*](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
 
-- Governance
-- Custody
-- Issuance and distribution
-- Transaction processing
-- Audit
+- Governance  
+- Custody  
+- Issuance and distribution  
+- Transaction processing  
+- Audit  
 
 Different combinations of the ways these processes are managed lead to hundred twenty five possible different types of digital assets and markets from which investors can pick to build a portfolio, including but not limited to crypto currencies, digital currencies, commodity-backed tokens, equity tokens, utility tokens, digital collectibles, etc.  
 In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[*](#weiss)</sup>
 
-- Risk Index
-- Reward Index
-- Technology Index
-- Adoption Index
+- Risk Index  
+- Reward Index  
+- Technology Index  
+- Adoption Index  
 
 While to first two indexes can be extracted and calculated from market data, the last ones follow a rather manual process and will also be subjective to invertor values and believes.  
 Invertors will then have to optimize risk and return for each type portfolio, extract a type index to, at last, optimize the whole portfolio.  
@@ -91,13 +88,13 @@ Overall, invertors will follow a repetitive process consisting of:
 
 Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox<sup>[*](#mtgox)</sup>... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
 
-<a name="mpt">*</a>: [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)
+<a name="mpt">*</a> [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)
 
-<a name="periodictable">*</a>: [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)
+<a name="periodictable">*</a> [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)
 
-<a name="weiss">*</a>: [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)
+<a name="weiss">*</a> [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)
 
-<a name="mtgox">*</a>: [Mt. Gox - Wikipedia](#https://en.wikipedia.org/wiki/Mt._Gox)
+<a name="mtgox">*</a> [Mt. Gox - Wikipedia](#https://en.wikipedia.org/wiki/Mt._Gox)
 
 
 ### 2.2 A growing complexity ###
@@ -114,21 +111,43 @@ Investors clearly need a tool to get rid of this middle man by providing all fun
 
 Not only Brane will allow investors to manage portfolio made of assests held at various exchanges and wallets, de facto reducing third party risk, but will also provide various service made possible by beeing at the core of portfolio operations such as financial reporting, market and performance analyses and automated trading.
 
+
 ## 3 Solution ##
 
-Brane will be open source to allow any investor to audit its code and will be designed using a fast number processing language: Julia.
+First and foremost Brane will be release under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version, allowing anyone to audit, contribute, fork or copy its code.  
+
+It will be designed using a fast number processing language: Julia.  
+
 
 ### 3.1 Single Point of Entry ###
 
-### 3.2 Reporting Made Easy ###
+Brane main benefit is its single point of entry to a multi-party, multi-assest portfolio that can simply be made possible by leveraging exchanges and wallets' API functionnality.
+
+### 3.2 Reporting Module ###
+
+Data coming from exchanges and wallets must be stored in a local database with consistent data format allowing investors to generate statement and performance report.
 
 ### 3.3 Analyses Module ###
 
+Building on its local database and live connection to exchanges, Brane must allow investors to analyse markets with the least possible delay and provide indicators on their respective actuals. On top of the later, Brane must allow investors to calculate and advise ideal portfolio composition, taking in account investors' preferences.
+
+#### 3.3.1 Market Analyses ####
+#### 3.3.2 Portfolio Analyses ####
+
 ### 3.4 Algorithmic Trading ###
+
+Algorithic trading is the natural next step for Brane which can rely onits own market indicators and actual portfolio deviation to ideal one. This implies that Brane must allow investors to back test their startegy, enable it in a simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
 
 ### 3.5 Decentralized Data Intelligence ###
 
+Considering Brane is used by multiple investors each using their very trading own strategy, Brane can build upon this by allowing investors to trade their startegies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
+
+#### 3.5.1 Market Data ####
+#### 3.5.2 Startegy Data ####
+
 ### 3.6 Dedicated Hardware ###
+
+
 
 ## 4 Conclusion ##
 
