@@ -116,12 +116,20 @@ Being at the core of all portfolio operations Brane will be able to provide a ra
 
 For the sake of transparency and audit-ability Brane will be release under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version, allowing anyone to audit, contribute, fork or copy its code.  
 
-It will be designed using a fast number processing language: Julia.  
+It should be designed using a Julia language, mainly for its high productivity and performance for both financial analytics and infrastructure.<sup>[[1]](#julia)</sup>
 
+<a name="julia">[1]</a> [Julia - A new language for technical computing](#http://www.automatedtrader.net/articles/technology-strategy/157921/julia-_-a-new-language-for-technical-computing)  
 
 ### 3.1 Single Point of Entry ###
 
-Brane main benefit is its single point of entry to a multi-party, multi-assets portfolio that can simply be made possible by leveraging exchanges and wallets' API functionality.
+#### 3.1.1 Live Data Service ####
+
+Leveraging exchanges and wallets' API functionalities, Brane will allow investors to connect to multiple parties and retreive both market and investor's trade data over multiple assets, that implies securely storing investor credential for private API calls.
+
+#### 3.1.2 Historical Data Service ####
+
+Historical or past data must and will be splitted in two distinct categories: public and private.  
+Public data or everything related to market will ideally be stored
 
 ### 3.2 Reporting Module ###
 
