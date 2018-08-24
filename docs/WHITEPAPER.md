@@ -42,12 +42,12 @@ Table of Contents
 
 ## 1 Introduction ##
 
-Bitcoin did successfully manage to remove trust in central authority that was so far requiered for any currency to be valued and used. Its ecosystem has developped over the years with the birth of hundreds differents cryptocurrencies and a financial system being a pale copy of the fiat financial system with exchanges and funds<sup>[2](#footnote2)</sup> all being handled by a third party which users have to blindy trust.  
+Bitcoin did successfully manage to remove trust in central authority that was so far requiered for any currency to be valued and used. Its ecosystem has developped over the years with the birth of hundreds differents cryptocurrencies and a financial system being a pale copy of the fiat financial system with exchanges and funds<sup>[#](#funds)</sup> all being handled by a third party which users have to blindy trust.  
 While exchanges do greatly help to enhance market liquidity and cannot be overlooked by investors, funds or ETF do shade away market complexity and operations, acting as a simple facade for investors.  
 The below describes the complexity of investing in cryptocurrencies and solution that investors could use to easely manage their investment without sacrifiying ease of use for third party risk.
 
 
-<a name="footnote2">2</a>: 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
+<a name="funds">#</a> 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
 
 ## 2 Problem Statement ##
 
