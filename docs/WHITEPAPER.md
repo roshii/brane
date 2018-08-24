@@ -26,7 +26,7 @@ Table of Contents
 =================
 * 1 [Introduction](#1-introduction)
 * 2 [Problem Statement](#2-problem-statement)
-    * 2.1 [Today's Market](#21-today's-market)
+    * 2.1 [Investing in the crypto market](#21-investing-in-the-crypto-market)
     * 2.2 [Pain Points](#22-pain-points)
     * 2.3 [Needs](#23-needs)
     * 2.4 [Benefits](#24-benefits)
@@ -42,12 +42,9 @@ Table of Contents
 
 ## 1 Introduction ##
 
-Bitcoin did successfully manage to remove trust in central authority that was so far requiered for any currency to be valued and used. Its ecosystem has developped over the years with the birth of hundreds differents cryptocurrencies and a financial system being a pale copy of the fiat financial system with exchanges and funds<sup>[#](#funds)</sup> all being handled by a third party which users have to blindy trust.  
+Bitcoin did successfully manage to remove trust in central authority that was so far requiered for any currency to be valued and used. Its ecosystem has developped over the years with the birth of hundreds differents cryptocurrencies and a financial system being a pale copy of the fiat financial system with exchanges and funds all being handled by a third party which users have to blindy trust.  
 While exchanges do greatly help to enhance market liquidity and cannot be overlooked by investors, funds or ETF do shade away market complexity and operations, acting as a simple facade for investors.  
 The below describes the complexity of investing in cryptocurrencies and solution that investors could use to easely manage their investment without sacrifiying ease of use for third party risk.
-
-
-<a name="funds">#</a> 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
 
 ## 2 Problem Statement ##
 
@@ -55,12 +52,12 @@ The below describes the complexity of investing in cryptocurrencies and solution
 
 #### 2.1.1 Asset Selection ####
 
-The cryto market offers a lot of investment options with more than sixteen hundreds cryptoassets<sup>[#](#coincount)</sup> and any wanabee investor will have to do his home work before entering the market. In most cases, Bitcoin will be the first, default cryptocurrency selected to build a portfolio - Bitcoin is just *the* original cryptocurrency, with the most capitalization, etc.  
+The cryto market offers a lot of investment options with more than sixteen hundreds cryptoassets<sup>[[1]](#coincount)</sup> and any wanabee investor will have to do his home work before entering the market. In most cases, Bitcoin will be the first, default cryptocurrency selected to build a portfolio - Bitcoin is just *the* original cryptocurrency, with the most capitalization, etc.  
 
-Regardless of the above, building a proper porfolio will require a quantitative analysis of available options so that assests can be selected and added to a portfolio to minimze risk and maximize return; it is assumed that "investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk."<sup>[#](#mpt)</sup>  
+Regardless of the above, building a proper porfolio will require a quantitative analysis of available options so that assests can be selected and added to a portfolio to minimze risk and maximize return; it is assumed that "investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk."<sup>[[2]](#mpt)</sup>  
 
 Cryptoassets do have a wide variety of use cases associated with different markets, so selecting the later and classifying cryptoasset are the first steps that should be taken to facilitate diversification.  
-According ton P. Kravchenko<sup>[#](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
+According ton P. Kravchenko<sup>[[3]](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
 
 - Governance  
 - Custody  
@@ -69,7 +66,7 @@ According ton P. Kravchenko<sup>[#](#periodictable)</sup>, classification depend
 - Audit  
 
 Different combinations of the ways these processes are managed lead to hundred twenty five possible different types of digital assets and markets from which investors can pick to build a portfolio, including but not limited to crypto currencies, digital currencies, commodity-backed tokens, equity tokens, utility tokens, digital collectibles, etc.  
-In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[#](#weiss)</sup>
+In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[[4]](#weiss)</sup>
 
 - Risk Index  
 - Reward Index  
@@ -78,6 +75,11 @@ In parallel of type classification, assets should be analyzed and rated individu
 
 While to first two indexes can be extracted and calculated from market data, the last ones follow a rather manual process and will also be subjective to invertor values and believes.  
 Invertors will then have to optimize risk and return for each type portfolio, extract a type index to, at last, optimize the whole portfolio.  
+
+<a name="coincount">[1]</a> [CoinMarketCap](#https://coinmarketcap.com/).  
+<a name="mpt">[2]</a> [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)  
+<a name="periodictable">[3]</a> [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)  
+<a name="weiss">[4]</a> [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)  
 
 #### 2.1.2 Rate, Optimize and Trade ####
 
@@ -90,25 +92,21 @@ Overall, invertors will follow a repetitive process consisting of:
 
 #### 2.1.3 Distribute Third Party Risk ####
 
-Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox<sup>[#](#mtgox)</sup>... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
+Last and not least, investors could very well select and use a single exchange and have all their asset stored and traded there, that would be convinient but would also be very bad if that exchange goes Mt Gox<sup>[[1]](#mtgox)</sup>... Thus, investors are better off spreading their risk over multiple parties and wallets and give away convinience; as the saying goes: don't put all your eggs in the same basket.  
 
-
-<a name="coincount">#</a> [CoinMarketCap](#https://coinmarketcap.com/).  
-<a name="mpt">#</a> [Modern portfolio theory - Wikipedia](#https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return)  
-<a name="periodictable">#</a> [The Periodic Table of Blockchain - Pavel Kravchenko](#https://www.coindesk.com/periodic-table-blockchain-classify-tokens/)  
-<a name="weiss">#</a> [The Weiss Cryptocurrency Ratings Explained - Weiss Ratings, LLC](#https://weisscryptocurrencyratings.com/ratings/the-weiss-cryptocurrency-ratings-explained-15)  
-<a name="mtgox">#</a> [Mt. Gox - Wikipedia](#https://en.wikipedia.org/wiki/Mt._Gox)  
-
+<a name="mtgox">[1]</a> [Mt. Gox - Wikipedia](#https://en.wikipedia.org/wiki/Mt._Gox)  
 
 ### 2.2 A growing complexity ###
 
-Regardless of how investors build their portfolio, following and managing the later is a manual process involving multiple parameters. Even though services or sofware are available for part of the process such as rating, optimization and timing, none do cover the whole repetitive process of rating, optimmizing and timing at once.  
-Investors are thus required to handle data manually at some point in time of the process. Considering investors should keep track of multiple parameters of multiple crypto asset held at multiple third parties, complexity and reporting is growing exponentilly with each new element in the portfolio, which can quickly become hard to manage manually.
+Regardless of how investors build their portfolio, following and managing the later is a manual process involving multiple parameters. Even though services or sofware are available to ease some parts of the process such as rating, optimization and timing, none do cover the whole repetitive process of rating, optimmizing and timing at once.  
+Investors are thus required to handle data manually at some point in time of the process. Considering investors should keep track of multiple parameters of multiple crypto asset held at multiple third parties, complexity and reporting is growing exponentilly with each new element added to a portfolio, which can quickly become hard to manage manually.
 
 ### 2.3 What do crypto investors need? ###
 
-New crypto ETF keep coming to the market with more the hundred and fifty active as off April 2018 and while they do cover the need for a service shading away the complexity of managing a crypto portfolio, investors do have to trust a single third party going against what cryptocurrencies have made possible: getting rid of the trusted third party.  
+New crypto ETF<sup>[[1]](#funds)</sup> keep coming to the market with more the hundred and fifty active as off April 2018 and while they do cover the need for a service shading away the complexity of managing a crypto portfolio, investors do have to trust a single third party going against what cryptocurrencies have made possible: getting rid of the trusted third party.  
 Investors clearly need a tool to get rid of this middle man by providing all functionallity needed for an investor to manage crypto portfolio through a single, unified software than can run from home.
+
+<a name="funds">[1]</a> 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
 
 ### 2.4 Benefits ###
 
