@@ -27,13 +27,19 @@ Table of Contents
 * 1 [Introduction](#1-introduction)
 * 2 [Problem Statement](#2-problem-statement)
     * 2.1 [Investing in the crypto market](#21-investing-in-the-crypto-market)
-    * 2.2 [Pain Points](#22-pain-points)
-    * 2.3 [Needs](#23-needs)
-    * 2.4 [Benefits](#24-benefits)
+	  * 2.1.1 [Asset Selection](#211-asset-selection)
+	  * 2.1.2 [Rate, Optimize and Trade](#212-rate,-optimize-and-trade)
+	  * 2.1.3 [Distribute Third Party Risk](#213-distribute-third-party-risk)
+	* 2.2 [A Growing Complexity](#22-a-growing-complexity)
+    * 2.3 [Trading Ease of Use for Risk](#23-trading-ease-of-use-for-risk)
 * 3 [Solution](#3-solution)
     * 3.1 [Single Point of Entry](#31-single-point-of-entry)
-	* 3.2 [Reporting Made Easy](#32-reporting-made-easy)
-	* 3.3 [Analyses Module](#33-analyses-module)
+	  * 3.1.1 [External Data Service](#311-external-data-service)
+	  * 3.1.2 [Local Data Service](#312-local-data-service)
+	* 3.2 [Financial Statements Module](#32-financial-statements-module)
+	* 3.3 [Analyses Modules](#33-analyses-module)
+	  * 3.3 [Market Analyses](#331-market-analyses)
+	  * 3.3 [Portfolio Analyses](#332-portfolio-analyses)
 	* 3.4 [Algorithmic Trading](#34-algorithmic-trading)
 	* 3.5 [Decentralized Data Intelligence](#35-decentralized-data-intelligence)
 	* 3.6 [Dedicated Hardware](#36-dedicated-hardware)
@@ -96,7 +102,7 @@ Last and not least, investors could very well select and use a single exchange a
 
 <a name="mtgox">[1]</a> [Mt. Gox - Wikipedia](#https://en.wikipedia.org/wiki/Mt._Gox)  
 
-### 2.2 A growing complexity ###
+### 2.2 A Growing Complexity ###
 
 Regardless of how investors build their portfolio, following and managing the later is a manual process involving multiple parameters. Even though services or software are available to ease some parts of the process such as rating, optimization and timing, none do cover the whole repetitive process of rating, optimizing and timing at once.  
 Investors are thus required to handle data manually at some point in time of the process. Considering investors should keep track of multiple parameters of multiple crypto asset held at multiple third parties, complexity and reporting is growing exponentially with each new element added to a portfolio, which can quickly become hard to manage manually.
@@ -116,46 +122,58 @@ Being at the core of all portfolio operations Brane will be able to provide a ra
 
 For the sake of transparency and audit-ability Brane will be release under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version, allowing anyone to audit, contribute, fork or copy its code.  
 
-It should be designed using a Julia language, mainly for its high productivity and performance for both financial analytics and infrastructure.<sup>[[1]](#julia)</sup>
+It will be designed using the Julia language, mainly for its dynamic nature and high productivity and performance for both financial analytics and infrastructure.<sup>[[1]](#julia)</sup>
 
 <a name="julia">[1]</a> [Julia - A new language for technical computing](#http://www.automatedtrader.net/articles/technology-strategy/157921/julia-_-a-new-language-for-technical-computing)  
 
 ### 3.1 Single Point of Entry ###
 
-#### 3.1.1 Live Data Service ####
+#### 3.1.1 External Data Service ####
 
-Leveraging exchanges and wallets' API functionalities, Brane will allow investors to connect to multiple parties and retreive both market and investor's trade data over multiple assets, that implies securely storing investor credential for private API calls.
+Leveraging exchanges and wallets' API functionalities, Brane will allow investors to connect to multiple parties and retreive both market and investor's trade data over multiple assets. It will provide both a live connection and an unified interface for querying past data from multiple sources.  
+The above naturally implies securely storing investor credential for private API calls.  
 
-#### 3.1.2 Historical Data Service ####
+#### 3.1.2 Local Data Service ####
 
-Historical or past data must and will be splitted in two distinct categories: public and private.  
-Public data or everything related to market will ideally be stored
+All data acquired through the external data service will be stored in persisve local databases split in two distinct categories: public and private, covering market and portfolio data respectively.
 
-### 3.2 Reporting Module ###
+### 3.2 Financial Statements Module ###
 
-Data coming from exchanges and wallets must be stored in a local database with consistent data format allowing investors to generate statement and performance report.
+The financial statements module will provide information about the financial position, financial performance, and cash flows of a portfolio, following International Accounting Standards<sup>[[1]](#ias)</sup>. To meet that objective, financial statements will include:  
 
-### 3.3 Analyses Module ###
+- a statement of financial position (balance sheet) at the end of the period  
+- a statement of profit or loss  
+- a statement of cash flows for the period  
 
-Building on its local database and live connection to exchanges, Brane must allow investors to analyze markets with the least possible delay and provide indicators on their respective actual. On top of the later, Brane must allow investors to calculate and advise ideal portfolio composition, taking in account investors' preferences.
+<a name="ias">[1]</a> [IAS](#https://www.iasplus.com/en/standards/ias/ias1)  
+
+### 3.3 Analyses Modules ###
 
 #### 3.3.1 Market Analyses ####
+
+The market analyses module will provide investors with markets' technical indicators. Brane will provide a library of indicators and allow investors to create and use their very own indicators.  
+To avoid re-computing information, indicators' value will be stored by local data service in a dedicated persitive database for later access or analyses.
+
 #### 3.3.2 Portfolio Analyses ####
+
+The portfolio analyses module will provide investors with the ability to select, rate and calculate weight of assets that will make up a portfolio, depending on its selected characteristics. It will consist of several sub-modules listed here after.  
+1. Portfolio characteristics definition including asset type, horizon, risk tolerance  
+2. Assets rating, on the basis of both data feeded from the market analyses module and data entered manually by investors  
+3. Determine ideal portfolio allocation following the (post) modern portfolio theory, Black–Litterman model, or any other relevant optimization model. 
 
 ### 3.4 Algorithmic Trading ###
 
-Algorithmic trading is the natural next step for Brane which can rely on its own market indicators and actual portfolio deviation to ideal one. This implies that Brane must allow investors to back test their strategy, enable it in a simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
+Algorithmic trading will rely on Brane's analyses modules to provide investors with a wide range of indicators. These indicators will in turn be used to trigger buy or sell orders according to investors' input.  
+Brane will allow investors to back test their strategy on historcal market data, enable it in a simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
 
 ### 3.5 Decentralized Data Intelligence ###
 
-Considering Brane is used by multiple investors each using their very trading own strategy, Brane can build upon this by allowing investors to trade their strategies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
+Considering Brane will be used by multiple investors each using their very trading own strategy, Brane will build upon this by allowing investors to trade their strategies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
 
 #### 3.5.1 Market Data ####
 #### 3.5.2 Strategy Data ####
 
 ### 3.6 Dedicated Hardware ###
-
-
 
 ## 4 Conclusion ##
 
@@ -167,5 +185,5 @@ Considering Brane is used by multiple investors each using their very trading ow
 
 See specifications file in docs folder.
 
-<!--  LocalWords:  Brane MERCHANTABILITY periodictable weiss
+<!--  LocalWords:  MERCHANTABILITY periodictable weiss
  -->
