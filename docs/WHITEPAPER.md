@@ -22,37 +22,37 @@
 
 This document explores problems faced by crypto-investors. It argues in favor of a portfolio management tool, Brane, and describes required functionalities for such tool. 
 
-Table of Contents
-=================
-* 1 [Introduction](#1-introduction)
-* 2 [Problem Statement](#2-problem-statement)
-    * 2.1 [Investing in the crypto market](#21-investing-in-the-crypto-market)
-	  * 2.1.1 [Asset Selection](#211-asset-selection)
-	  * 2.1.2 [Rate, Optimize and Trade](#212-rate,-optimize-and-trade)
-	  * 2.1.3 [Distribute Third Party Risk](#213-distribute-third-party-risk)
-	* 2.2 [A Growing Complexity](#22-a-growing-complexity)
-    * 2.3 [Trading Ease of Use for Risk](#23-trading-ease-of-use-for-risk)
-* 3 [Solution](#3-solution)
-    * 3.1 [Single Point of Entry](#31-single-point-of-entry)
-	  * 3.1.1 [External Data Service](#311-external-data-service)
-	  * 3.1.2 [Local Data Service](#312-local-data-service)
-	* 3.2 [Financial Statements Module](#32-financial-statements-module)
-	* 3.3 [Analyses Modules](#33-analyses-module)
-	  * 3.3 [Market Analyses](#331-market-analyses)
-	  * 3.3 [Portfolio Analyses](#332-portfolio-analyses)
-	* 3.4 [Algorithmic Trading](#34-algorithmic-trading)
-	* 3.5 [Decentralized Data Intelligence](#35-decentralized-data-intelligence)
-	* 3.6 [Dedicated Hardware](#36-dedicated-hardware)
-* 4 [Conclusion](#4-conclusion)
-* 5 [Additional Resources](#5-additional-resources)
+## Table of Contents ##
 
-## 1 Introduction ##
+1. [Introduction](#introduction)
+2. [Problem Statement](#problem-statement)
+    1. [Investing in the crypto market](#investing-in-the-crypto-market)
+	    1. [Asset Selection](#asset-selection)
+	    2. [Rate, Optimize and Trade](#rate-optimize-and-trade)
+	    3. [Distribute Third Party Risk](#distribute-third-party-risk)
+	2. [A Growing Complexity](#a-growing-complexity)
+    3. [Trading Ease of Use for Risk](#trading-ease-of-use-for-risk)
+3. [Solution](#solution)
+    1. [Single Point of Entry](#single-point-of-entry)
+	    1. [External Data Service](#external-data-service)
+	    2. [Local Data Service](#local-data-service)
+	2. [Financial Statements Module](#financial-statements-module)
+	3. [Analyses Modules](#analyses-module)
+	    1. [Market Analyses](#market-analyses)
+	    2. [Portfolio Analyses](#portfolio-analyses)
+	4. [Algorithmic Trading](#algorithmic-trading)
+	5. [Distributed Data Intelligence](#distributed-data-intelligence)
+	6. [Dedicated Hardware](#dedicated-hardware)
+4. [Conclusion](#conclusion)
+5. [Additional Resources](#additional-resources)
+
+## 1. Introduction ##
 
 Bitcoin did successfully manage to remove trust in central authority that was so far required for any currency to be valued and used. Its ecosystem has developed over the years with the birth of hundreds different cryptocurrencies and a financial system being a pale copy of the fiat financial system with exchanges and funds all being handled by a third party which users have to blindly trust.  
 While exchanges do greatly help to enhance market liquidity and cannot be overlooked by investors, funds or ETF do shade away market complexity and operations, acting as a simple facade for investors.  
 The below describes the complexity of investing in cryptocurrencies and solution that investors could use to easily manage their investment without scarifying ease of use for third party risk.
 
-## 2 Problem Statement ##
+## 2. Problem Statement ##
 
 ### 2.1 Investing in the crypto market ###
 
@@ -63,21 +63,22 @@ The crypto market offers a lot of investment options with more than sixteen hund
 Regardless of the above, building a proper portfolio will require a quantitative analysis of available options so that assets can be selected and added to a portfolio to minimize risk and maximize return; it is assumed that "investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk."<sup>[[2]](#mpt)</sup>  
 
 Crypto-assets do have a wide variety of use cases associated with different markets, so selecting the later and classifying crypto-asset are the first steps that should be taken to facilitate diversification.  
-According ton P. Kravchenko<sup>[[3]](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:
+According ton P. Kravchenko<sup>[[3]](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:  
 
-- Governance  
-- Custody  
-- Issuance and distribution  
-- Transaction processing  
-- Audit  
+
+  * Governance  
+  * Custody  
+  * Issuance and distribution
+  * Transaction processing  
+  * Audit  
 
 Different combinations of the ways these processes are managed lead to hundred twenty five possible different types of digital assets and markets from which investors can pick to build a portfolio, including but not limited to crypto currencies, digital currencies, commodity-backed tokens, equity tokens, utility tokens, digital collectibles, etc.  
-In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[[4]](#weiss)</sup>
+In parallel of type classification, assets should be analyzed and rated individually by aggregating some key data such as:<sup>[[4]](#weiss)</sup>  
 
-- Risk Index  
-- Reward Index  
-- Technology Index  
-- Adoption Index  
+  * Risk Index  
+  * Reward Index  
+  * Technology Index  
+  * Adoption Index  
 
 While to first two indexes can be extracted and calculated from market data, the last ones follow a rather manual process and will also be subjective to investor values and believes.  
 Inventors will then have to optimize risk and return for each type portfolio, extract a type index to, at last, optimize the whole portfolio.  
@@ -92,9 +93,10 @@ Inventors will then have to optimize risk and return for each type portfolio, ex
 Having their ideal portfolio distribution at hand, investors will then have to enter or exit markets and time their entry or exit to balance their actual portfolio distribution against benchmark and get the most reward out of the trade, most likely using technical analysis of each market.  
 
 Overall, investors will follow a repetitive process consisting of:  
-- Asset rating  
-- Portfolio optimization  
-- Trade timing  
+
+  * Asset rating  
+  * Portfolio optimization  
+  * Trade timing  
 
 #### 2.1.3 Distribute Third Party Risk ####
 
@@ -115,7 +117,7 @@ It must allow investors to easily manage portfolio made of assets held at variou
 
 <a name="funds">[1]</a> 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
 
-## 3 Solution ##
+### 3 Solution ###
 
 The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all operation through a facade that standardize operations. This will be the main function of the proposed solution, Brane.  
 Being at the core of all portfolio operations Brane will be able to provide a range of functionalities naturally building on each other.  
@@ -141,9 +143,9 @@ All data acquired through the external data service will be stored in persisve l
 
 The financial statements module will provide information about the financial position, financial performance, and cash flows of a portfolio, following International Accounting Standards<sup>[[1]](#ias)</sup>. To meet that objective, financial statements will include:  
 
-- a statement of financial position (balance sheet) at the end of the period  
-- a statement of profit or loss  
-- a statement of cash flows for the period  
+  * a statement of financial position (balance sheet) at the end of the period  
+  * a statement of profit or loss  
+  * a statement of cash flows for the period  
 
 <a name="ias">[1]</a> [IAS](#https://www.iasplus.com/en/standards/ias/ias1)  
 
@@ -157,20 +159,24 @@ To avoid re-computing information, indicators' value will be stored by local dat
 #### 3.3.2 Portfolio Analyses ####
 
 The portfolio analyses module will provide investors with the ability to select, rate and calculate weight of assets that will make up a portfolio, depending on its selected characteristics. It will consist of several sub-modules listed here after.  
-1. Portfolio characteristics definition including asset type, horizon, risk tolerance  
-2. Assets rating, on the basis of both data feeded from the market analyses module and data entered manually by investors  
-3. Determine ideal portfolio allocation following the (post) modern portfolio theory, Black–Litterman model, or any other relevant optimization model. 
+
+  * Portfolio characteristics definition including asset type, horizon, risk tolerance  
+  * Assets rating, on the basis of both data feeded from the market analyses module and data entered manually by investors  
+  * Determine ideal portfolio allocation following the (post) modern portfolio theory, Black-Litterman model, or any other relevant optimization model. 
 
 ### 3.4 Algorithmic Trading ###
 
 Algorithmic trading will rely on Brane's analyses modules to provide investors with a wide range of indicators. These indicators will in turn be used to trigger buy or sell orders according to investors' input.  
 Brane will allow investors to back test their strategy on historcal market data, enable it in a simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
 
-### 3.5 Decentralized Data Intelligence ###
+### 3.5 Distributed Data Intelligence ###
 
 Considering Brane will be used by multiple investors each using their very trading own strategy, Brane will build upon this by allowing investors to trade their strategies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
 
 #### 3.5.1 Market Data ####
+
+Data beyond used indicator stored on distributed database
+
 #### 3.5.2 Strategy Data ####
 
 ### 3.6 Dedicated Hardware ###
