@@ -20,7 +20,8 @@
 
 ## Abstract ##
 
-This document explores problems faced by crypto-investors. It argues in favor of a portfolio management tool, Brane, and describes required functionalities for such tool. 
+This document explores problems faced by crypto-investors.  
+It argues in favor of a portfolio management tool, Brane, and describes required functionalities for such tool. 
 
 ## Table of Contents ##
 
@@ -34,17 +35,22 @@ This document explores problems faced by crypto-investors. It argues in favor of
     3. [Trading Ease of Use for Risk](#trading-ease-of-use-for-risk)
 3. [Solution](#solution)
     1. [Single Point of Entry](#single-point-of-entry)
-	    1. [External Data Service](#external-data-service)
-	    2. [Local Data Service](#local-data-service)
+	    1. [Unified Trading Language](#unified-trading-language)
+		2. [External Data Service](#external-data-service)
+	    3. [Local Data Service](#local-data-service)
 	2. [Financial Statements Module](#financial-statements-module)
 	3. [Analyses Modules](#analyses-module)
 	    1. [Market Analyses](#market-analyses)
 	    2. [Portfolio Analyses](#portfolio-analyses)
 	4. [Algorithmic Trading](#algorithmic-trading)
-	5. [Distributed Data Intelligence](#distributed-data-intelligence)
-	6. [Dedicated Hardware](#dedicated-hardware)
 4. [Conclusion](#conclusion)
-5. [Additional Resources](#additional-resources)
+5. [Future](#future)
+	1. [Distributed Data](#distributed-data-intelligence)
+	    1. [Market Data](#market-data)
+		1. [Strategy Data](#strategy-data)
+	2. [Distributed Computing](#distributed-computing)
+	3. [Dedicated Hardware](#dedicated-hardware)
+6. [Additional Resources](#additional-resources)
 
 ## 1. Introduction ##
 
@@ -64,7 +70,6 @@ Regardless of the above, building a proper portfolio will require a quantitative
 
 Crypto-assets do have a wide variety of use cases associated with different markets, so selecting the later and classifying crypto-asset are the first steps that should be taken to facilitate diversification.  
 According ton P. Kravchenko<sup>[[3]](#periodictable)</sup>, classification depends on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:  
-
 
   * Governance  
   * Custody  
@@ -119,8 +124,8 @@ It must allow investors to easily manage portfolio made of assets held at variou
 
 ### 3 Solution ###
 
-The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all operation through a facade that standardize operations. This will be the main function of the proposed solution, Brane.  
-Being at the core of all portfolio operations Brane will be able to provide a range of functionalities naturally building on each other.  
+The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all operation through a facade that standardize operations. This will consequently reduce investors' risk without giving away ease of use. And this will be the main function of the proposed solution, Brane.  
+Being at the core of all portfolio operations Brane will be able to provide a range of added functionalities naturally building on each other.  
 
 For the sake of transparency and audit-ability Brane will be release under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version, allowing anyone to audit, contribute, fork or copy its code.  
 
@@ -130,14 +135,18 @@ It will be designed using the Julia language, mainly for its dynamic nature and 
 
 ### 3.1 Single Point of Entry ###
 
-#### 3.1.1 External Data Service ####
+#### 3.1.1 Unified Trading Language ####
 
-Leveraging exchanges and wallets' API functionalities, Brane will allow investors to connect to multiple parties and retreive both market and investor's trade data over multiple assets. It will provide both a live connection and an unified interface for querying past data from multiple sources.  
+Interactions with services will be standardized to allow investors to use external services without having to worry about the various API specifics. It will just simplify the management of multiple parties by unifying query constructs.
+
+#### 3.1.2 External Data Service ####
+
+Leveraging the unified trading language, Brane will allow investors to connect to multiple parties to retreive both market and investor's trade data over multiple assets. It will provide both live connection and construct for querying past data from multiple sources.  
 The above naturally implies securely storing investor credential for private API calls.  
 
-#### 3.1.2 Local Data Service ####
+#### 3.1.3 Local Data Service ####
 
-All data acquired through the external data service will be stored in persisve local databases split in two distinct categories: public and private, covering market and portfolio data respectively.
+All data acquired through the external data service will be stored in persistive local databases split categories: e.g. market data, portfolio data, asset rating, etc.
 
 ### 3.2 Financial Statements Module ###
 
@@ -146,6 +155,8 @@ The financial statements module will provide information about the financial pos
   * a statement of financial position (balance sheet) at the end of the period  
   * a statement of profit or loss  
   * a statement of cash flows for the period  
+
+In other words, this module will simply query and concatenate local data in a predefined (or user-defined) model.  
 
 <a name="ias">[1]</a> [IAS](#https://www.iasplus.com/en/standards/ias/ias1)  
 
@@ -162,34 +173,46 @@ The portfolio analyses module will provide investors with the ability to select,
 
   * Portfolio characteristics definition including asset type, horizon, risk tolerance  
   * Assets rating, on the basis of both data feeded from the market analyses module and data entered manually by investors  
-  * Determine ideal portfolio allocation following the (post) modern portfolio theory, Black-Litterman model, or any other relevant optimization model. 
+  * Portfolio optimization following the (post) modern portfolio theory, Black-Litterman model, or any relevant optimization model. 
 
 ### 3.4 Algorithmic Trading ###
 
 Algorithmic trading will rely on Brane's analyses modules to provide investors with a wide range of indicators. These indicators will in turn be used to trigger buy or sell orders according to investors' input.  
 Brane will allow investors to back test their strategy on historcal market data, enable it in a simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
 
-### 3.5 Distributed Data Intelligence ###
-
-Considering Brane will be used by multiple investors each using their very trading own strategy, Brane will build upon this by allowing investors to trade their strategies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
-
-#### 3.5.1 Market Data ####
-
-Data beyond used indicator stored on distributed database
-
-#### 3.5.2 Strategy Data ####
-
-### 3.6 Dedicated Hardware ###
-
 ## 4 Conclusion ##
 
-### 4.1 Summary ###
+With the above mentionned modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all managed ETF's advantages to private investors owning an internet connection and a computer.On top of the later, investors will be able to include or exclude any third pary or asset they deem non trustable, following their very own analyses.  
 
-### 4.2 Future ###
+## 5 Future ##
 
-## 5 Additional Resources ##
+Brane is first intended to be used by tech-savyy investors that have basic knowledge in scrpting and operating servers. In the longer term though, Brane will develop GUI to facilitate user interactions.  
+Other modules will be investigated, aiming at distributing trading data, intelligence and computing, further described here after. These later modules combined with a friendly GUI would allow any investor to use Brane, purchasing strategy, computing and/or data from investor to investor.  
+
+### 5.1 Distributed Data ###
+
+Brane will allow users to reduce or backup local storage by distributing non critical data<sup>[[1]](#critical)</sup> over multiple nodes.
+
+<a name="critical">[1]</a> data not required for calculating indicators 
+ 
+#### 5.1.1 Market Data ####
+
+This will be an automated system in which market data beyond date ranges used to calculate indicators, will stored in a distributed database.  
+Ideally, data distribution would be similar to torrents and before being added publicly, data will have to be signed for correctness by multiple users. While market data will easely be verifiable, indicators will require multiple computation to ensure correctness. On the other hand, this data would need to be calculated and verified only once, allowing later investor to simpy retreive it.  
+
+#### 5.1.2 Strategy Data ####
+
+This module will allow investors to trade their strategies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
+Strategy data will have to be signed by investor before publication to a startegy market. Such signature will be taking in account market data from the distributed market data to allow anyone to verify for strategy performance without revealing startegy. A startegy buyer would receive startegy private key against a fee for decryption of the later.  
+Startegy market will be an automated system, matching best strategy for investors depending on their risk profiles, preferences and views on crypto market.
+
+### 5.2 Distributed Computing ###
+
+Calculating indicators while optimizing portfolio might end up being ressourse intensive and we could imagine some investors willing to deep test their startegyusing ressources from other nodes to speed up optimization. This will require some sort of proof of work system in which result would be provided to requestor only. And instead of being competitive, result would be delivered by a collaborative distributed computation.  
+This will hopefully allow investors to develop and test trading strategy using deep learning algorithm without having to invest in 
+
+### 5.3 Dedicated Hardware ###
+
+## 6 Additional Resources ##
 
 See specifications file in docs folder.
-
-<!--  LocalWords:  MERCHANTABILITY periodictable weiss
- -->
