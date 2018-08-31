@@ -69,7 +69,7 @@ Regardless of the above, building a proper portfolio will require a quantitative
 
 #### 2.1.1 Asset Selection ####
 
-To begin with, investors have to understand what they are investing in and may start with classifying crypto-assets. Exibiting a wide range of use cases associated with different markets, similar assets will tend to behave similarly in given market conditions and their classification will help investor to diversify.  
+To begin with, investors have to understand what they are investing in and may start with classifying crypto-assets. Exhibiting a wide range of use cases associated with different markets, similar assets will tend to behave similarly in given market conditions and their classification will help investor to diversify.  
 
 For example and according to P. Kravchenko<sup>[[3]](#periodictable)</sup>, classification could be done on five processes which may have at least three states (centralized, decentralized, not possible), and which can be managed by one or separate roles:  
 
@@ -102,7 +102,7 @@ Investors are then able to optimize risk and return for their portfolio using ra
 Overall, investors will keep on repeating the following processes, to adapt to market and maximize return:  
 
   * Rating assets  
-  * Optimizating portfolio  
+  * Optimizing portfolio  
   * Timing trades  
 
 #### 2.1.3 Distribute Third Party Risk ####
@@ -125,9 +125,9 @@ New crypto ETF<sup>[[1]](#funds)</sup> keep coming to the market with more the h
 ### 3 Solution ###
 
 Investors clearly need a tool to get rid of this middle man by providing all functionalities needed to manage crypto-portfolios through a single, unified software than can run from home.  
-It must allow investors to easily manage portfolio made of assets held at various exchanges and wallets, de facto reducing third party risk, but must also provide various service made possible by being at the core of portfolio operations such as financial reporting, market and performance analyses, automated trading, data intelligence. It will ideally connect to decentralized exchanges to trully decentralize investments.  
+It must allow investors to easily manage portfolio made of assets held at various exchanges and wallets, de facto reducing third party risk, but must also provide various service made possible by being at the core of portfolio operations such as financial reporting, market and performance analyses, automated trading, data intelligence. It will ideally connect to decentralized exchanges to truly decentralize investments.  
 
-The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all opperation through a facade that standardize operations. This will consequently reduce investors' risk without giving away ease of use. And this will be the main function of the proposed solution: Brane.  
+The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all operation through a facade that standardize operations. This will consequently reduce investors' risk without giving away ease of use. And this will be the main function of the proposed solution: Brane.  
 Being at the core of all portfolio operations Brane will be able to provide a range of added functionalities naturally building on each other.  
 
 For the sake of transparency and audit-ability Brane will be release under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version, allowing anyone to audit, contribute, fork or copy its code.  
@@ -185,7 +185,7 @@ It will also allow investors to back test strategy, run it in simulation mode a.
 
 ## 4 Conclusion ##
 
-With the above mentioned modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all managed ETF's advantages to private investors with a simple internet connection and computer. On top of the later, investors will be able to include or exclude any third party or asset they deem non trustable, following their very own analyses or belief.  
+With the above mentioned modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all managed ETF's advantages to private investors with a simple internet connection and computer. On top of the later, investors will be able to include or exclude any third party or asset they deem non trustworthy, following their very own analyses or belief.  
 
 ## 5 Future ##
 
