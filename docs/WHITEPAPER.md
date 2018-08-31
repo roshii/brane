@@ -20,7 +20,7 @@
 
 ## Abstract ##
 
-This document explores problems faced by crypto-investors for managing their investment.  
+This document explores problems faced by crypto-investors for managing their investments.  
 It argues in favor of a portfolio management tool, Brane, describes its required functionalities and set a road map for future extensions. 
 
 ## Table of Contents ##
@@ -35,7 +35,7 @@ It argues in favor of a portfolio management tool, Brane, describes its required
     3. [Trading Ease of Use for Risk](#trading-ease-of-use-for-risk)
 3. [Solution](#solution)
     1. [Single Point of Entry](#single-point-of-entry)
-	    1. [Unified Trading Language](#unified-trading-language)
+	    1. [Unified API Language](#unified-api-language)
 		2. [External Data Service](#external-data-service)
 	    3. [Local Data Service](#local-data-service)
 	2. [Financial Statements Module](#financial-statements-module)
@@ -51,6 +51,7 @@ It argues in favor of a portfolio management tool, Brane, describes its required
 	2. [Distributed Computing](#distributed-computing)
 	3. [Dedicated Hardware](#dedicated-hardware)
 6. [Additional Resources](#additional-resources)
+    1. [A Note About Decentralized Exchange](#a-note-about-decentralized-exchange)
 
 ## 1. Introduction ##
 
@@ -98,11 +99,11 @@ Note that while to first two indexes can be extracted and calculated from market
 
 Investors are then able to optimize risk and return for their portfolio using rating and classification data collected previously. With their ideal portfolio distribution at hand, investors can enter and/or exit markets to balance their actual portfolio distribution against benchmark and time their trades to get the most reward out of it.  
 
-Overall, investors will follow a repetitive process consisting of:  
+Overall, investors will keep on repeating the following processes, to adapt to market and maximize return:  
 
-  * Asset rating  
-  * Portfolio optimization  
-  * Trade timing  
+  * Rating assets  
+  * Optimizating portfolio  
+  * Timing trades  
 
 #### 2.1.3 Distribute Third Party Risk ####
 
@@ -118,14 +119,15 @@ Investors are thus required to handle data manually at some point in time of the
 ### 2.3 Trading Ease of Use for Risk ###
 
 New crypto ETF<sup>[[1]](#funds)</sup> keep coming to the market with more the hundred and fifty active as off April 2018 and while they do cover the need for a service, shading away the complexity of managing a crypto portfolio, investors do have to trust a single third party going against what cryptocurrencies have made possible: getting rid of the trusted third party.  
-Investors clearly need a tool to get rid of this middle man by providing all functionality needed for an investor to manage crypto portfolio through a single, unified software than can run from home.  
-It must allow investors to easily manage portfolio made of assets held at various exchanges and wallets, de facto reducing third party risk, but must also provide various service made possible by being at the core of portfolio operations such as financial reporting, market and performance analyses, automated trading, data intelligence. It will ideally connect to decentralized exchanges to trully decentralize investments.  
 
 <a name="funds">[1]</a> 150+ funds according to [Bloomberg](#https://www.bloomberg.com/news/articles/2018-04-02/crypto-hedge-fund-bubble-begins-to-deflate-as-returns-tumble)  
 
 ### 3 Solution ###
 
-The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all operation through a facade that standardize operations. This will consequently reduce investors' risk without giving away ease of use. And this will be the main function of the proposed solution, Brane.  
+Investors clearly need a tool to get rid of this middle man by providing all functionalities needed to manage crypto-portfolios through a single, unified software than can run from home.  
+It must allow investors to easily manage portfolio made of assets held at various exchanges and wallets, de facto reducing third party risk, but must also provide various service made possible by being at the core of portfolio operations such as financial reporting, market and performance analyses, automated trading, data intelligence. It will ideally connect to decentralized exchanges to trully decentralize investments.  
+
+The first and logical step to get rid of third party risk is to spread assets over multiple parties while managing all opperation through a facade that standardize operations. This will consequently reduce investors' risk without giving away ease of use. And this will be the main function of the proposed solution: Brane.  
 Being at the core of all portfolio operations Brane will be able to provide a range of added functionalities naturally building on each other.  
 
 For the sake of transparency and audit-ability Brane will be release under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version, allowing anyone to audit, contribute, fork or copy its code.  
@@ -136,14 +138,14 @@ It will be designed using the Julia language, mainly for its dynamic nature and 
 
 ### 3.1 Single Point of Entry ###
 
-#### 3.1.1 Unified Trading Language ####
+#### 3.1.1 Unified API Language ####
 
 Interactions with services will be standardized to allow investors to use external services without having to worry about the various API specifics. It will just simplify the management of multiple parties by unifying query constructs.
 
 #### 3.1.2 External Data Service ####
 
-Leveraging the unified trading language, Brane will allow investors to connect to multiple parties to retrieve both market and investor's trade data over multiple assets. It will provide both live connection and construct for querying past data from multiple sources.  
-The above naturally implies securely storing investor credential for private API calls.  
+Leveraging the unified trading API language, Brane will allow investors to connect to multiple parties to retrieve both market and investor's trade data over multiple assets. It will provide both live connection and construct for querying past data from multiple sources.  
+The above naturally implies securely storing investor's credential for private API calls.  
 
 #### 3.1.3 Local Data Service ####
 
@@ -157,7 +159,7 @@ The financial statements module will provide information about the financial pos
   * a statement of profit or loss  
   * a statement of cash flows for the period  
 
-In other words, this module will simply query and concatenate local data in a predefined (or user-defined) model.  
+In other words, this module will simply query and concatenate local data in a predefined (or user-defined) formats.  
 
 <a name="ias">[1]</a> [IAS](#https://www.iasplus.com/en/standards/ias/ias1)  
 
@@ -166,7 +168,7 @@ In other words, this module will simply query and concatenate local data in a pr
 #### 3.3.1 Market Analyses ####
 
 The market analyses module will provide investors with markets' technical indicators. Brane will provide a library of indicators and allow investors to create and use their very own indicators.  
-To avoid re-computing information, indicators' value will be stored by local data service in a specific category for later access or analyses.
+To avoid re-computing information, indicators' value will be stored by the local data service in a specific category for later access or analyses.
 
 #### 3.3.2 Portfolio Analyses ####
 
@@ -178,12 +180,12 @@ The portfolio analyses module will provide investors with the ability to select,
 
 ### 3.4 Algorithmic Trading ###
 
-Algorithmic trading will rely on Brane's analyses modules to provide investors with a wide range of indicators. These indicators will in turn be used to trigger buy or sell orders according to investors' input.  
-Brane will allow investors to back test their strategy on historical market data, enable it in a simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
+Algorithmic trading will rely on Brane's analyses modules to provide investors with a wide range of indicators. These indicators will in turn be used to trigger buy or sell orders according to conditions defined by investor.  
+It will also allow investors to back test strategy, run it in simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
 
 ## 4 Conclusion ##
 
-With the above mentioned modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all managed ETF's advantages to private investors, simply owning an internet connection and a computer. On top of the later, investors will be able to include or exclude any third party or asset they deem non trustable, following their very own analyses or belief.  
+With the above mentioned modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all managed ETF's advantages to private investors with a simple internet connection and computer. On top of the later, investors will be able to include or exclude any third party or asset they deem non trustable, following their very own analyses or belief.  
 
 ## 5 Future ##
 
@@ -192,9 +194,9 @@ Other modules will be investigated, aiming at distributing trading data, intelli
 
 ### 5.1 Distributed Data ###
 
-Brane will allow users to reduce or backup local storage by distributing non critical data<sup>[[1]](#critical)</sup> over multiple nodes. It will also create a decentralized data market where investorsin which each and every node is free to participate.
+Brane will allow users to reduce or backup local data by distributing whats non critical<sup>[[1]](#critical)</sup> over multiple nodes. It will also create a decentralized data market in which each and every node is free to participate.
 
-<a name="critical">[1]</a> data not required for calculating indicators 
+<a name="critical">[1]</a> i.e. data not required for calculating indicators.  
  
 #### 5.1.1 Market Data ####
 
@@ -209,17 +211,17 @@ Strategy market will be an automated system, matching best strategy for investor
 
 ### 5.2 Distributed Computing ###
 
-Calculating indicators and optimizing portfolio might end up being resource intensive and we could imagine some investors willing to deep test their strategy using res sources from other nodes to speed up optimization. This will require some sort of proof of work system in which result would be provided to requester only. And instead of being competitive, result would be delivered by a collaborative distributed computation network.  
-This could allow investors to develop and test trading strategy using deep learning algorithm while allowing others to rent their spare computing capabilities. Other setup, could give birth to collaborative funds in which investors having same profile and objective would mutualize resources with each others.
+Calculating indicators and optimizing portfolio might end up being resource intensive and we could imagine some investors willing to use resources from other nodes to speed up computation, optimization. This will require some sort of proof of work system in which result would be provided to requester only. And instead of being competitive, result would be delivered by a collaborative distributed computation network.  
+This could allow investors to develop and test trading strategy using deep learning algorithm while allowing others to rent their spare computing capabilities. Other setup, combined with the distributed strategy market could give birth to collaborative funds in which investors having similar profile and objectives would mutualize resources.
 
 ### 5.3 Dedicated Hardware ###
 
 A dedicated hardware running Brane along with 100% free software will be developed in the longer term to facilitate deployment. This will allow investor to simply plug it, go through configuration and have their personal crypto fund running within the hour.
 
-### 5.3 A Note About Decentralized Exchange ###
-
-Last and not least, Brane is originally thought to be used with decentralized exchange which will hopefully be develop and slowly replace classic exchange. As soon as this becomes a reality, Brane will make the most sense by allowing investor to remain in total control of their funds, providing a range of functionalities, expendables by means of modules. 
-
 ## 6 Additional Resources ##
 
 Please refer to [GitHub project page](#https://github.com/roshii/brane/)
+
+### 6.1 A Note About Decentralized Exchange ###
+
+Last and not least, Brane is originally thought to be used with decentralized exchange which will hopefully be develop and slowly replace classic exchange. As soon as this becomes a reality, Brane will make the most sense by allowing investor to remain in total control of their funds, providing a range of functionalities, expendables by means of modules. 
