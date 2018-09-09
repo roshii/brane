@@ -33,13 +33,13 @@ It argues in favor of a portfolio management tool, Brane, describes its required
 	    1. [Market Analyses](#market-analyses)
     	2. [Portfolio Analyses](#portfolio-analyses)
     4. [Algorithmic Trading](#algorithmic-trading)
-4. [Conclusion](#conclusion)
-5. [Future](#future)
+4. [Future](#future)
     1. [Distributed Data](#distributed-data-intelligence)
         1. [Market Data](#market-data)
         2. [Strategy Data](#strategy-data)
     2. [Distributed Computing](#distributed-computing)
     3. [Dedicated Hardware](#dedicated-hardware)
+5. [Conclusion](#conclusion)
 6. [Additional Resources](#additional-resources)
     1. [A Note About Decentralized Exchange](#a-note-about-decentralized-exchange)
 	2. [GNU Free Documentation License](#gnu-free-documentation-license)
@@ -174,40 +174,41 @@ The portfolio analyses module will provide investors with the ability to select,
 Algorithmic trading will rely on Brane's analyses modules to provide investors with a wide range of indicators. These indicators will in turn be used to trigger buy or sell orders according to conditions defined by investor.  
 It will also allow investors to back test strategy, run it in simulation mode a.k.a. paper trade and restrict trading to portfolio portions only.
 
-## 4 Conclusion ##
-
-With the above mentioned modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all managed ETF's advantages to private investors with a simple internet connection and computer. On top of the later, investors will be able to include or exclude any third party or asset they deem non trustworthy, following their very own analyses or belief.  
-
-## 5 Future ##
+## 4 Future ##
 
 Brane is first intended to be used by tech-savvy investors that have basic knowledge in scripting and operating servers. In the longer term though, Brane will develop GUI to facilitate user interactions.  
 Other modules will be investigated, aiming at distributing trading data, intelligence and computing, further described here after. These later modules combined with a friendly GUI would allow any investor to use Brane, purchasing strategy, computing and/or data from investor to investor.  
 
-### 5.1 Distributed Data ###
+### 4.1 Distributed Data ###
 
 Brane will allow users to reduce or backup local data by distributing whats non critical<sup>[[1]](#critical)</sup> over multiple nodes. It will also create a decentralized data market in which each and every node is free to participate.
 
 <a name="critical">[1]</a> i.e. data not required for calculating indicators.  
  
-#### 5.1.1 Market Data ####
+#### 4.1.1 Market Data ####
 
 This will be an automated system in which market data beyond date ranges used to calculate indicators, will be stored in a distributed database.  
 Ideally, data distribution would be similar to torrents and before being added publicly, data will have to be signed for correctness by multiple users. While market data will easily be verifiable, indicators will require multiple computation to ensure correctness. On the other hand, this data would need to be calculated and verified only once, allowing later investor to simply retrieve it.  
 
-#### 5.1.2 Strategy Data ####
+#### 4.1.2 Strategy Data ####
 
 This module will allow investors to trade their strategies with other investors by comparing respective performances and signaling investors of possible strategy deal.  
 Strategy data will have to be signed by investor before publication to a strategy market. Such signature will be taking in account market data from the distributed market data to allow anyone to verify for strategy performance without revealing strategy. A strategy buyer would receive strategy private key against a fee for decryption of the later.  
 Strategy market will be an automated system, matching best strategy for investors depending on their risk profiles, preferences and views on crypto market.
 
-### 5.2 Distributed Computing ###
+### 4.2 Distributed Computing ###
 
 Calculating indicators and optimizing portfolio might end up being resource intensive and we could imagine some investors willing to use resources from other nodes to speed up computation, optimization. This will require some sort of proof of work system in which result would be provided to requester only. And instead of being competitive, result would be delivered by a collaborative distributed computation network.  
 This could allow investors to develop and test trading strategy using deep learning algorithm while allowing others to rent their spare computing capabilities. Other setup, combined with the distributed strategy market could give birth to collaborative funds in which investors having similar profile and objectives would mutualize resources.
 
-### 5.3 Dedicated Hardware ###
+### 4.3 Dedicated Hardware ###
 
 A dedicated hardware running Brane along with 100% free software will be developed in the longer term to facilitate deployment. This will allow investor to simply plug it, go through configuration and have their personal crypto fund running within the hour.
+
+## 5 Conclusion ##
+
+With its core modules interacting with each others, i.e. data service, reporting, analyses and algorithmic trading, Brane will offer all the tools necessary to private investors to manage their crypto fund with a simple internet connection and computer. On top of the later, investors will be able to include or exclude any third party or asset they deem non trustworthy, following their very own analyses or belief.  
+It the longer term Brane, will not only connect investors and create a decentralized market for data and computing resources but will also allow anyone with limited knowledge in crypto investment to participate in this market and delegate management to Brane which will retrieve and run best proven strategies matching investor's profile.  
 
 ## 6 Additional Resources ##
 
